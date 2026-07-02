@@ -1,0 +1,52 @@
+{
+  "name": "ai-agents-tutorial",
+  "image": "ghcr.io/nfdata-omics/ai-agents-tutorial:2026-07-02",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.jupyterServerType": "local",
+        "terminal.integrated.defaultProfile.linux": "bash",
+
+        "python.languageServer": "None",
+        "python.analysis.indexing": false,
+        "python.analysis.autoImportCompletions": false,
+        "python.analysis.diagnosticMode": "openFilesOnly",
+
+        "files.watcherExclude": {
+          "**/.git/objects/**": true,
+          "**/.git/subtree-cache/**": true,
+          "**/node_modules/**": true,
+          "**/.venv/**": true,
+          "**/venv/**": true,
+          "**/__pycache__/**": true,
+          "**/*.zarr/**": true,
+          "**/*.h5ad": true,
+          "**/*.parquet": true
+        },
+
+        "search.exclude": {
+          "**/.git": true,
+          "**/.venv": true,
+          "**/venv": true,
+          "**/__pycache__": true,
+          "**/*.zarr": true,
+          "**/*.h5ad": true,
+          "**/*.parquet": true
+        }
+      }
+    }
+  },
+
+  "remoteEnv": {
+    "DATA_DIR": "/workspaces/data",
+    "HOST_PROJECT_PATH": "/workspaces/nfdata-omics-ai-agents-tutorial",
+    "SHELL": "/bin/bash"
+  }
+
+}
