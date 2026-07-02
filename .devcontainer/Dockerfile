@@ -20,4 +20,4 @@ USER vscode
 RUN python -m ipykernel install \
     --name ai-agents-tutorial \
     --display-name "Python (ai-agents-tutorial)" \
-    --sys-prefix
+    --user
