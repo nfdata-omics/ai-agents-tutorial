@@ -79,7 +79,7 @@ git config --global user.email "your.email@example.com"
 Install the repository hooks once per environment:
 
 ```bash
-pre-commit install
+prek install
 ```
 
 The hooks are configured in `.pre-commit-config.yaml` and currently check YAML files, devcontainer schema validity, Dockerfiles, trailing whitespace, end-of-file newlines, large files, and notebook output cleanup through `nbstripout`.
@@ -87,7 +87,7 @@ The hooks are configured in `.pre-commit-config.yaml` and currently check YAML f
 Before opening a pull request, run all checks on the full repository:
 
 ```bash
-pre-commit run --all-files
+prek run --all-files
 ```
 
 ### Updating the Software Environment
