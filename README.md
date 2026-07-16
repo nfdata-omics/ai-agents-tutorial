@@ -1,6 +1,15 @@
-# TITLE
+# EXPLORATORY DATA ANALYSIS WITH AI
 
-This repository contains the hands-on material for a workshop on ...
+This repository contains the hands-on material for the *__'Exploratory data analysis with AI'__* session at the 2026 summer school *‘AI for Life Sciences and Agri-Food Research’*. The workshop uses bulk RNA-seq as a practical case study for exploring LLMs, RAG, and AI agents.
+
+## Hands-on guide
+
+- [Start Here](#start-here)
+- [Workshop Goals](#workshop-goals)
+- [Workshop Roadmap](#workshop-roadmap)
+- [How to Follow the Hands-On](#how-to-follow-the-hands-on)
+- [Tips and Tricks for Jupyter](#tips-and-tricks-for-jupyter)
+
 
 ## Start Here
 
@@ -11,29 +20,50 @@ This repository contains the hands-on material for a workshop on ...
 
 The workshop is designed to run inside the provided Codespaces environment.
 
+
 ## Workshop Goals
 
 By the end of the hands-on session, you will be able to:
 
-- GOAL 1
-- GOAL 2
-- ...
+- __Explore and control LLM behaviour__ by experimenting with model selection, prompts, context, output formats and reliability strategies.
+- __Build and evaluate a retrieval-augmented generation (RAG) workflow__ using embeddings, document chunking, vector stores and retrieval techniques.
+- __Design and compare AI agent architectures__ to query and interpret bulk RNA-seq data. 
 
 ## Workshop Roadmap
 
-| Step | Notebook | Main focus | Output |
-|---|---|---|---|
-| 1 | `notebooks/01_LLM_exploration.ipynb` | ... | ... |
+| Step | Notebook | Main focus | 
+|---|---|---|
+| 1 | [01_LLM_exploration](notebooks/01_LLM_exploration.ipynb) | LLM capabilities for RNA-seq interpretation: comparing models, prompts, context and output methods | 
+| 2 | [02_RAG](notebooks/02_RAG.ipynb) | Grounding LLMs with project-specific knowledge: RAG, embeddings, semantic search, vector databases |
+| 3 | [03_agent_architectures](notebooks/03_agent_architectures.ipynb) | Building an AI agent to interact with omics data: architectures, tool use, memory and orchestration |
+ 
 
 ## How to Follow the Hands-On
 
-### 1. LLM Exploratoin
+### 1. [LLM Exploration](notebooks/01_LLM_exploration.ipynb)
 
 In the first notebook, you will:
 
-- TASK 1
-- TASK 2
-- ...
+* Compare how model choice, temperature, prompts, and context affect LLM responses.
+* Generate and validate outputs in free-text, JSON, Pydantic, and structured formats.
+* Test reliability techniques such as retries, fallback models, streaming, and citations.
+
+### 2. [RAG](notebooks/02_RAG.ipynb)
+
+In the second notebook, you will:
+
+* Prepare bulk RNA-seq literature for retrieval using document splitting and embeddings.
+* Build and compare vector stores and retrieval methods.
+* Evaluate how chunking, metadata filtering, and top-k selection affect retrieved context.
+
+### 3. [Agent Architectures](notebooks/03_agent_architectures.ipynb)
+
+In the third notebook, you will:
+
+* Create tools for querying and analysing bulk RNA-seq data and results.
+* Build and compare tool-calling agents, routers, and sequential chains.
+* Explore how memory and tool configuration affect agents’ responses to biological questions.
+
 
 ## Tips and Tricks for Jupyter
 
@@ -43,6 +73,7 @@ In the first notebook, you will:
 - Use `Esc` to enter command mode, then `B` to add a cell below or `A` to add a cell above.
 - In command mode, use `C`, `X`, and `V` to copy, cut, and paste cells.
 - If a plot or computation takes time, wait for the cell to finish before running it again.
+
 
 ## Technical Reference for Maintainers
 
