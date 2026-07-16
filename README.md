@@ -89,9 +89,11 @@ In the third notebook, you will:
 - In command mode, use `C`, `X`, and `V` to copy, cut, and paste cells.
 - If a plot or computation takes time, wait for the cell to finish before running it again.
 
-<details>
+
 
 ## Technical Reference for Maintainers
+
+<details>
 
 <summary><strong>See here for details</strong></summary>
 
