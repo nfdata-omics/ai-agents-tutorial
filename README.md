@@ -10,19 +10,20 @@ This repository contains the hands-on material for the *__'Exploratory data anal
 - [Start Here](#start-here)
 - [Workshop Goals](#workshop-goals)
 - [Workshop Roadmap](#workshop-roadmap)
+- [Dataset and Biological Context](#dataset-and-biological-context)
 - [How to Follow the Hands-On](#how-to-follow-the-hands-on)
 - [Tips and Tricks for Jupyter](#tips-and-tricks-for-jupyter)
 
 
 ## Start Here
 
-#### 1. Open this repository in GitHub Codespaces.
+#### 1. Open this repository in GitHub Codespaces
 
-#### 2. Wait until the Codespace setup has completed.
+#### 2. Wait until the Codespace setup has completed
 
-#### 3. Open `notebooks/01_LLM_exploration.ipynb`.
+#### 3. Open `notebooks/01_LLM_exploration.ipynb`
 
-#### 4. Run the notebooks in order.
+#### 4. Run the notebooks in order
 
 The workshop is designed to run inside the provided Codespaces environment.
 
@@ -42,7 +43,15 @@ By the end of the hands-on session, you will be able to:
 | 1 | [01_LLM_exploration](notebooks/01_LLM_exploration.ipynb) | LLM capabilities for RNA-seq interpretation: comparing models, prompts, context and output methods | 
 | 2 | [02_RAG](notebooks/02_RAG.ipynb) | Grounding LLMs with project-specific knowledge: RAG, embeddings, semantic search, vector databases |
 | 3 | [03_agent_architectures](notebooks/03_agent_architectures.ipynb) | Building an AI agent to interact with omics data: architectures, tool use, memory and orchestration |
- 
+
+## Dataset and Biological Context
+
+This workshop uses data derived from the Bioconductor [`airway`](https://bioconductor.org/packages/airway/) package, a widely used bulk RNA-seq example. The experiment profiled four primary human airway smooth muscle cell lines under two conditions: untreated and treated with dexamethasone, giving eight samples in a paired design.
+
+Airway smooth muscle cells are specialised lung cells located in the walls of the airways, where they help regulate airway narrowing and relaxation. Dexamethasone, a synthetic glucocorticoid with anti-inflammatory activity, was used to investigate how corticosteroid exposure changes gene expression in these cells.
+
+The data originate from Himes et al. (2014), [*RNA-Seq Transcriptome Profiling Identifies CRISPLD2 as a Glucocorticoid Responsive Gene that Modulates Cytokine Function in Airway Smooth Muscle Cells*](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0099625), *PLOS ONE*, 9(6), e99625.
+
 
 ## How to Follow the Hands-On
 
@@ -80,8 +89,11 @@ In the third notebook, you will:
 - In command mode, use `C`, `X`, and `V` to copy, cut, and paste cells.
 - If a plot or computation takes time, wait for the cell to finish before running it again.
 
+<details>
 
 ## Technical Reference for Maintainers
+
+<summary><strong>See here for details</strong></summary>
 
 ### Working on the Notebooks
 
@@ -174,3 +186,5 @@ To add, remove, or update Python packages:
    ```
 
 New Codespaces will use the updated image tag. Existing Codespaces may need to be rebuilt from the Codespaces command palette or recreated to pick up the new image.
+
+</details>
