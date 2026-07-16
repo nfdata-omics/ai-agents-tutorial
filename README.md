@@ -1,4 +1,7 @@
-# EXPLORATORY DATA ANALYSIS WITH AI
+<h1 align="center">
+  Exploratory Data Analysis<br>
+  with AI
+</h1>
 
 This repository contains the hands-on material for the *__'Exploratory data analysis with AI'__* session at the 2026 summer school *‘AI for Life Sciences and Agri-Food Research’*. The workshop uses bulk RNA-seq as a practical case study for exploring LLMs, RAG, and AI agents.
 
@@ -13,10 +16,13 @@ This repository contains the hands-on material for the *__'Exploratory data anal
 
 ## Start Here
 
-1. Open this repository in GitHub Codespaces.
-2. Wait until the Codespace setup has completed.
-3. Open `notebooks/01_LLM_exploration.ipynb`.
-4. Run the notebooks in order.
+#### 1. Open this repository in GitHub Codespaces.
+
+#### 2. Wait until the Codespace setup has completed.
+
+#### 3. Open `notebooks/01_LLM_exploration.ipynb`.
+
+#### 4. Run the notebooks in order.
 
 The workshop is designed to run inside the provided Codespaces environment.
 
